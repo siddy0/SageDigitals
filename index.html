@@ -5,52 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NOTHING</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: beige;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        .product-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .product-link {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            overflow: hidden;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease-in-out;
+        }
+        .product-link:hover {
+            transform: scale(1.2);
+        }
+        .product-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <h1>NOTHING</h1>
-            </div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>NOTHING</h1>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h2>NOTHING Is Everything</h2>
-            <p>Your destination for the latest Streetwear</p>
-            <a href="#" class="btn">Shop Now</a>
+    <div class="product-links">
+        <div class="product-link">
+            <a href="#"><img class="product-image" file:///C:/Users/Sailaja/Pictures/CARGO%20(6).png="cargo.jpg" alt="Cargo"></a>
         </div>
-    </section>
-
-    <section class="featured-products">
-        <h2>Cargo</h2>
-        <!-- Add featured product cards here -->
-    </section>
-  
-    <section class="featured-products">
-        <h2>Shirt</h2>
-        <!-- Add featured product cards here -->
-    </section>
-
-    <section class="featured-products">
-        <h2>Pant</h2>
-        <!-- Add featured product cards here -->
-    </section>
-
-    <section class="featured-products">
-        <h2>Hoodie</h2>
-        <!-- Add featured product cards here -->
-    </section>
-  
-    <footer>
-        <p>&copy; 2023 NOTHING. All rights reserved.</p>
-      <p> Contact: +91 9903993066 | sagemediadigital@gmail.com</p>
-    </footer>
+        <div class="product-link">
+            <a href="#"><img class="product-image" src="shirt.jpg" alt="Shirt"></a>
+        </div>
+        <div class="product-link">
+            <a href="#"><img class="product-image" src="pant.jpg" alt="Pant"></a>
+        </div>
+        <div class="product-link">
+            <a href="#"><img class="product-image" src="hoodie.jpg" alt="Hoodie"></a>
+        </div>
+        <div class="product-link">
+            <a href="#"><img class="product-image" src="varsity.jpg" alt="Varsity"></a>
+        </div>
+        <div class="product-link">
+            <a href="#"><img class="product-image" src="sweater.jpg" alt="Sweater"></a>
+        </div>
+    </div>
 </body>
 </html>
